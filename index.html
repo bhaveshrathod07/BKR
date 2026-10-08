@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title> BKR Creative — Offline Test | — Bhavesh Kanhaiyalal Rathod</title>
+<meta content="Premium cinematic creator portfolio of Bhavesh Kanhaiyalal Rathod from Barwani, India." name="description"/>
+<meta content="#070707" name="theme-color"/>
+<style>
+:root{--bg:#050505;--panel:#0d0d0d;--panel2:#111;--white:#f5f2ea;--muted:#99948a;--gold:#ffbd16;--gold2:#ffe07a;--line:#292929}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:5px 5px;z-index:0}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}.gold{color:var(--gold)}
+/* LOADER */
+.loader{position:fixed;inset:0;z-index:99999;background:#030303;display:grid;place-items:center;padding:20px;transition:opacity .65s,visibility .65s}.loader.hide{opacity:0;visibility:hidden;pointer-events:none}.loader-inner{text-align:center;width:min(650px,94vw)}.loader-video{width:min(430px,82vw);max-height:42vh;object-fit:contain;display:block;margin:auto;border-radius:20px;box-shadow:0 25px 80px #000}.loader-name{font-size:clamp(28px,7vw,58px);font-weight:950;letter-spacing:.16em;margin:18px 0 8px}.loader-sub{color:var(--gold);font-size:10px;letter-spacing:.3em}.loader-track{height:3px;background:#222;border-radius:99px;overflow:hidden;width:min(430px,75vw);margin:24px auto 8px}.loader-bar{height:100%;width:0;background:linear-gradient(90deg,#fff,var(--gold));transition:width .2s}.loader-percent{font-size:10px;color:#777}.loader-fallback{font-size:9px;color:#555;margin-top:12px}
+/* WELCOME */
+.welcome{position:fixed;inset:0;z-index:90000;display:none;place-items:center;background:#000d;backdrop-filter:blur(16px);padding:18px}.welcome.show{display:grid}.welcome-box{width:min(540px,94vw);background:linear-gradient(145deg,#151515,#090909);border:1px solid #444;border-radius:24px;padding:30px;box-shadow:0 35px 120px #000}.welcome-box h2{font-size:clamp(36px,9vw,62px);margin:10px 0;letter-spacing:-.06em}.welcome-box p{color:#aaa;line-height:1.7}.welcome-close{float:right;background:none;border:0;color:#888;font-size:28px;cursor:pointer}.modal-actions{display:grid;gap:10px;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #333;border-radius:12px;padding:13px 17px;background:#111;color:#fff;font-size:11px;font-weight:850;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-2px);border-color:#8c6b13}.btn.primary{background:var(--gold);border-color:var(--gold);color:#080808}.kicker{color:var(--gold);font-size:10px;font-weight:900;letter-spacing:.24em}.note{color:#666;font-size:9px;margin-top:14px}.celebrate{position:fixed;inset:0;z-index:91000;pointer-events:none;display:none}.celebrate.show{display:block}.conf{position:absolute;animation:fall 1.8s ease-out forwards}@keyframes fall{0%{transform:translateY(-20px) rotate(0);opacity:1}100%{transform:translateY(80vh) translateX(var(--x)) rotate(420deg);opacity:0}}
+/* TOP */
+.topbar{position:fixed;z-index:500;top:12px;left:50%;transform:translateX(-50%);width:min(1120px,94%);padding:8px 10px;border:1px solid #292929;border-radius:15px;background:#080808e8;backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:8px;font-weight:950;letter-spacing:.14em;font-size:11px}.mini{width:43px;height:34px;object-fit:contain}.nav{display:flex;gap:18px;color:#aaa;font-size:11px}.sound{border:1px solid #2e2e2e;border-radius:9px;background:#111;color:#eee;padding:8px 10px;font-size:10px;cursor:pointer}
+section{padding:110px 0;position:relative;z-index:1}.hero{min-height:100svh;display:grid;align-items:center;padding-top:140px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}.hero h1{font-size:clamp(64px,13vw,168px);line-height:.72;letter-spacing:-.09em;margin:18px 0 32px}.hero h1 span{display:block}.outline{color:transparent;-webkit-text-stroke:1px #eee}.hero p{max-width:590px;color:#aaa;font-size:16px;line-height:1.7}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.hero-art{position:relative;min-height:510px;display:grid;place-items:center}.frame{width:min(460px,92%);aspect-ratio:4/5;border:1px solid #333;overflow:hidden;background:#111;position:relative;box-shadow:0 35px 100px #000}.frame img{width:100%;height:100%;object-fit:cover;display:block}.frame:after{content:"BKR / CREATIVE STUDIO";position:absolute;left:22px;bottom:18px;background:#000d;padding:8px;color:#fff;font-size:8px;letter-spacing:.25em}.stripe{position:absolute;width:220px;height:60px;background:var(--gold);right:0;bottom:8%;transform:rotate(-7deg);opacity:.85}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}.section-head h2{font-size:clamp(36px,6vw,74px);line-height:.9;letter-spacing:-.065em;margin:8px 0}.muted{color:var(--muted);font-size:12px}
+/* SOCIAL */
+.social-showcase{padding:45px 0 30px;background:linear-gradient(180deg,#0a0a0a,#070707)}.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}.social-card{display:block;position:relative;overflow:hidden;border:1px solid #333;border-radius:20px;background:#0d0d0d;min-height:250px}.social-card img{width:100%;height:300px;object-fit:cover;display:block}.social-overlay{position:absolute;left:0;right:0;bottom:0;padding:45px 18px 18px;background:linear-gradient(transparent,#050505ef);display:flex;justify-content:space-between;align-items:end}.social-overlay span{display:block;color:var(--gold);font-size:9px;letter-spacing:.18em}.social-overlay strong{font-size:18px}.qr-card{margin-top:18px;display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:center;border:1px solid #333;border-radius:20px;padding:18px;background:#0b0b0b}.qr-card img{width:180px;height:180px;object-fit:cover;border-radius:14px}
+/* MOTION */
+.motion-showcase{padding:50px 0}.motion-grid{display:grid;gap:26px}.motion-card{border:1px solid #333;background:#070707;border-radius:22px;overflow:hidden;box-shadow:0 25px 80px #000}.motion-card video{width:100%;height:auto;display:block;background:#000}.motion-info{padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:15px}.motion-info strong{font-size:18px}.motion-info span{font-size:10px;color:#777}.motion-sound{width:42px;height:42px;border-radius:50%;border:1px solid #555;background:#111;color:#fff;cursor:pointer}
+/* CREATOR */
+.creator{display:grid;grid-template-columns:.72fr 1.28fr;gap:18px}.creator-photo{border:1px solid #292929;background:#0c0c0c;overflow:hidden;border-radius:22px}.creator-photo img{width:100%;height:100%;min-height:560px;object-fit:cover;display:block}.creator-card{border:1px solid #292929;border-radius:22px;background:radial-gradient(circle at 20% 10%,#1b1608,#0b0b0b 55%);padding:clamp(28px,5vw,58px);display:flex;flex-direction:column;justify-content:center}.creator-label{font-size:10px;color:var(--gold);letter-spacing:.3em;font-weight:900}.creator-name{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:500;font-size:clamp(48px,7vw,100px);line-height:.9;letter-spacing:-.065em;margin:18px 0 24px}.creator-location{font-size:15px;color:#aaa;margin-bottom:25px}.creator-line{width:100%;height:1px;background:#2a2a2a;margin:10px 0 22px}.creator-ram{font-family:Georgia,serif;font-size:clamp(24px,4vw,44px);font-style:italic;color:var(--gold2);margin-top:25px}
+/* EDITS */
+.edits{padding-top:95px}.edit-grid{display:grid;grid-template-columns:1fr;gap:28px}.edit-card{border:1px solid #303030;border-radius:20px;background:#090909;overflow:hidden;box-shadow:0 20px 70px #000}.edit-video{width:100%;height:auto;display:block;background:#000}.edit-info{padding:17px 18px 20px;display:flex;justify-content:space-between;gap:15px;align-items:center}.edit-title{font-size:20px;font-weight:900}.edit-sub{display:block;color:#777;font-size:10px;margin-top:5px}.video-sound{width:42px;height:42px;flex:none;border-radius:50%;border:1px solid #555;background:#111;color:#fff;cursor:pointer}
+/* INSTAGRAM */
+.highlights{display:flex;gap:25px;flex-wrap:wrap;margin:15px 0 40px}.highlight{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:10px;color:#aaa}.ring{width:88px;height:88px;padding:3px;border-radius:50%;background:linear-gradient(135deg,#ffd35a,#ff9f16,#c83fb8,#7a5cff);box-shadow:0 0 0 2px #ffbd1640}.ring img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid #080808;display:block}.reel-grid,.posts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.reel-card,.post-card{border:1px solid var(--line);background:#0b0b0b;overflow:hidden;border-radius:18px;display:block}.reel-card img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover}.reel-meta,.post-info{display:block;padding:14px}.reel-meta small,.post-info small{display:block;color:var(--gold);font-size:9px;letter-spacing:.18em}.reel-meta strong,.post-info strong{display:block;font-size:17px;margin-top:8px}.reel-meta em,.post-info span{display:block;color:#777;font-size:10px;font-style:normal;margin-top:4px}.reel-play{position:absolute;transform:translate(14px,-54px);float:right;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid #777;background:#000b}.post-card img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;display:block}
+/* SERVICES / END */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{border:1px solid #292929;background:#0d0d0d;border-radius:20px;padding:26px;min-height:180px}.service h3{font-size:21px;margin:0 0 12px}.service p{color:#888;font-size:12px;line-height:1.6}.review{border:1px solid #4b3a0a;padding:65px 20px;text-align:center;border-radius:24px;background:radial-gradient(circle at 50% 0,#251c05,#0a0a0a 60%)}.review h2{font-size:clamp(35px,7vw,80px);margin:10px 0}.ganesh-final{font-family:Georgia,serif;font-style:italic;font-size:clamp(25px,4vw,44px);color:var(--gold2);margin:15px}.footer{border-top:1px solid #202020;padding:40px 0 70px}.foot{display:flex;justify-content:space-between;gap:20px}.foot small{color:#666}.gmail-last{margin-top:28px;padding-top:20px;border-top:1px solid #222;color:#aaa}.gmail-last strong{color:var(--gold)}.gmail-last a{color:#fff;text-decoration:none}.gmail-last a:hover{color:var(--gold)}.music{position:fixed;z-index:800;right:14px;bottom:14px;border:1px solid #6d5206;border-radius:22px;background:#090909ee;color:var(--gold);padding:11px 14px;font-size:10px;cursor:pointer}.music.on{background:var(--gold);color:#090909}
+@media(max-width:800px){.nav{display:none}.hero-grid,.creator{grid-template-columns:1fr}.hero h1{font-size:clamp(62px,19vw,105px)}.hero-art{min-height:430px}.social-grid,.reel-grid,.posts-grid,.services{grid-template-columns:1fr}.creator-photo img{min-height:430px}.creator-name{font-size:clamp(48px,13vw,80px)}.qr-card{grid-template-columns:1fr;text-align:center}.qr-card img{margin:auto}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:520px){section{padding:85px 0}.wrap{width:92%}.hero-art{min-height:410px}.creator-card{padding:28px 22px}.creator-name{font-size:52px}.highlights{gap:20px}.ring{width:82px;height:82px}}
+
+/* BKR FINAL UPDATE: creator gallery + social cover cards */
+.creator-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:14px;background:#070707;border:1px solid #292929;border-radius:22px;align-items:stretch}
+.creator-shot{position:relative;overflow:hidden;border:1px solid #3b3b3b;border-radius:18px;background:#111;min-height:540px;transform:rotate(var(--r));box-shadow:0 18px 50px #0008}
+.creator-shot:nth-child(1){--r:-2deg}.creator-shot:nth-child(2){--r:1deg}.creator-shot:nth-child(3){--r:-1deg}
+.creator-shot img{width:100%;height:100%;min-height:540px;object-fit:cover;display:block;filter:grayscale(1) contrast(1.06)}
+.creator-shot::after{content:"BHAVESH RATHOD";position:absolute;left:12px;bottom:10px;font-size:9px;letter-spacing:.24em;color:#fff;background:#000b;padding:7px 9px;border-left:2px solid var(--gold)}
+.social-showcase .social-grid{grid-template-columns:repeat(2,1fr)}
+.social-card img{aspect-ratio:16/7;object-fit:cover}
+.gmail-card .social-overlay strong{font-size:clamp(20px,3vw,34px)}
+@media(max-width:800px){.creator-gallery{grid-template-columns:1fr 1fr}.creator-shot{min-height:300px}.creator-shot img{min-height:300px}.creator-shot:nth-child(3){grid-column:1/-1;max-height:430px}.social-showcase .social-grid{grid-template-columns:1fr}.social-card img{aspect-ratio:16/8}}
+
+
+/* BKR visual refresh */
+.bkr-mini-video{background:#050505;border-radius:8px;border:1px solid #3a2b08;object-fit:cover;object-position:center;filter:contrast(1.08);box-shadow:0 0 18px #ffbd1620}
+.topbar .brand span{font-size:10px;color:#ffbd16;letter-spacing:.18em}
+.social-cover.yt-cover-mini{background-image:linear-gradient(90deg,#0008,#0003),url("assets/images/asset-01.jpg");background-size:cover;background-position:center}
+.cover-logo-line{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;color:#fff;position:relative;z-index:2}
+.brand-youtube{width:44px;height:30px;border-radius:8px;background:#ff1d1d;display:grid;place-items:center;font-weight:950;font-size:18px;color:#fff}
+.social-logo-svg{position:absolute;right:22px;top:18px;width:58px;height:58px;z-index:2;filter:drop-shadow(0 8px 20px #0008)}
+.fun-cover-copy{position:absolute;left:18px;right:18px;bottom:18px;z-index:3;pointer-events:none}
+.fun-cover-copy b{display:inline-block;background:#000b;border:1px solid #ffbd16;border-radius:999px;padding:6px 10px;color:#ffbd16;font-size:9px;letter-spacing:.12em}
+.fun-cover-copy strong{display:block;font-size:clamp(18px,3vw,30px);font-weight:950;line-height:.95;margin-top:8px;text-shadow:0 5px 22px #000}
+.fun-cover-copy span{display:block;color:#ddd;font-size:10px;margin-top:5px}
+.reel-card,.post-card{transition:transform .28s ease,box-shadow .28s ease}
+.reel-card:hover,.post-card:hover{transform:translateY(-7px) rotate(-.6deg);box-shadow:0 22px 55px #000b,0 0 24px #ffbd1620}
+.reel-card .reel-meta,.post-card .post-info{backdrop-filter:blur(6px)}
+.app-logo-wrap{width:82px;height:82px;border-radius:20px;display:grid;place-items:center;flex:none;background:#0b0b0b;border:1px solid #ffffff25;box-shadow:0 12px 35px #0009;overflow:hidden}
+.app-logo-wrap svg{width:64px;height:64px;display:block}
+.service:hover .app-logo-wrap{transform:rotate(-4deg) scale(1.05)}
+.service{transition:transform .25s ease,box-shadow .25s ease}.service:hover{transform:translateY(-5px);box-shadow:0 22px 55px #000b}
+.edit-card:nth-child(3) .edit-video{box-shadow:0 0 0 1px #ffbd16,0 0 45px #ffbd1626}
+
+/* === BKR SOCIAL COVER REDESIGN v2 === */
+.reel-card,.post-card{isolation:isolate;background:#050505;border:1px solid rgba(255,193,45,.28);box-shadow:0 14px 40px rgba(0,0,0,.35);}
+.reel-card img,.post-card img{position:relative;z-index:0;width:100%;height:100%;min-height:280px;aspect-ratio:4/5;object-fit:cover;display:block;filter:grayscale(.12) contrast(1.08) saturate(1.08);transition:transform .55s cubic-bezier(.2,.75,.2,1),filter .55s ease;}
+.post-card img{aspect-ratio:1/1;min-height:250px;}
+.reel-card:before,.post-card:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.08) 12%,rgba(0,0,0,.02) 35%,rgba(0,0,0,.82) 100%);}
+.reel-card:after,.post-card:after{content:"";position:absolute;z-index:2;inset:12px;border:1px solid rgba(255,211,90,.35);border-radius:12px;pointer-events:none;box-shadow:inset 0 0 28px rgba(255,190,30,.08);}
+.fun-cover-copy{position:absolute;z-index:4;left:18px;right:18px;bottom:18px;display:flex;flex-direction:column;align-items:flex-start;text-shadow:0 3px 16px #000;pointer-events:none;}
+.fun-cover-copy b{font:700 9px/1.1 Arial,sans-serif;letter-spacing:.24em;color:#ffd34f;margin-bottom:7px;text-transform:uppercase;}
+.fun-cover-copy strong{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:800;font-size:clamp(25px,3.5vw,42px);line-height:.95;letter-spacing:-.04em;color:#fff;max-width:95%;}
+.fun-cover-copy span{margin-top:8px;font:700 10px/1.2 Arial,sans-serif;letter-spacing:.14em;color:#f5f5f5;text-transform:uppercase;}
+.reel-card:nth-child(2) .fun-cover-copy strong,.post-card:nth-child(2) .fun-cover-copy strong{font-family:'Trebuchet MS',Arial,sans-serif;font-style:normal;letter-spacing:-.055em;}
+.reel-card:nth-child(3) .fun-cover-copy strong,.post-card:nth-child(3) .fun-cover-copy strong{font-family:Georgia,'Times New Roman',serif;font-style:normal;text-transform:uppercase;letter-spacing:.01em;}
+.reel-card:nth-child(4) .fun-cover-copy strong,.post-card:nth-child(4) .fun-cover-copy strong{font-family:Georgia,'Times New Roman',serif;font-style:italic;}
+.reel-card:hover img,.post-card:hover img{transform:scale(1.045);filter:grayscale(0) contrast(1.12) saturate(1.2) brightness(1.04);}
+.reel-play{z-index:5;position:absolute;right:18px;top:18px;transform:none;float:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,211,79,.75);background:rgba(0,0,0,.62);color:#fff;font-size:14px;box-shadow:0 0 18px rgba(255,193,45,.18);}
+.reel-meta,.post-info{position:absolute;z-index:5;left:18px;top:18px;padding:0;background:none!important;backdrop-filter:none!important;}
+.reel-meta small,.post-info small{font:700 8px/1 Arial,sans-serif;letter-spacing:.2em;color:#fff8;}
+.reel-meta strong,.post-info strong,.reel-meta em,.post-info span{display:none;}
+@media(max-width:800px){.reel-card img{min-height:330px}.post-card img{min-height:260px}.fun-cover-copy strong{font-size:30px}.fun-cover-copy span{font-size:9px}.reel-card:after,.post-card:after{inset:9px;}}
+/* Cleaner hero typography */
+.hero h1 span{display:block;line-height:.82;letter-spacing:-.065em;text-transform:uppercase;}
+.hero h1 .outline{font-style:italic;letter-spacing:-.075em;}
+/* Reels & Posts: keep the original Instagram section visible */
+#instagram .reel-grid[id="reels"],
+#instagram .posts-grid[id="posts"]{display:grid!important;visibility:visible!important;opacity:1!important;}
+</style>
+<style id="yt-work-update">
+.yt-feature-wrap{margin:0 auto 54px;width:min(1180px,92%)}
+.yt-feature-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:16px}
+.yt-feature-title{font-size:clamp(28px,4vw,48px);font-weight:900;letter-spacing:-.03em;margin:4px 0 0}
+.yt-feature-card{position:relative;overflow:hidden;border:1px solid #3b3b3b;border-radius:22px;background:#050505;box-shadow:0 0 0 1px rgba(255,189,22,.08),0 18px 55px rgba(0,0,0,.45)}
+.yt-feature-poster{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;cursor:pointer;transition:transform .5s ease,filter .5s ease}
+.yt-feature-card:hover .yt-feature-poster{transform:scale(1.015);filter:brightness(1.05)}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;border:1px solid rgba(255,255,255,.7);background:rgba(255,189,22,.95);color:#050505;font-size:30px;font-weight:900;display:grid;place-items:center;box-shadow:0 0 35px rgba(255,189,22,.3);cursor:pointer}
+.yt-feature-frame{display:block;width:100%;aspect-ratio:16/9;border:0;background:#000}
+.yt-feature-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:14px 18px;background:linear-gradient(90deg,#0b0b0b,#111)}
+.yt-feature-bottom strong{font-size:16px}.yt-feature-bottom span{color:#aaa;font-size:13px}
+.yt-work-card{position:relative}
+.yt-work-card .social-overlay{background:linear-gradient(0deg,rgba(0,0,0,.92),transparent 70%)}
+@media(max-width:700px){.yt-feature-wrap{margin-bottom:38px}.yt-feature-bottom{align-items:flex-start;flex-direction:column}.yt-play{width:62px;height:62px;font-size:24px}}
+
+/* FINAL CREATIVE UPDATE */
+.topbar .mini{width:48px;height:42px;border-radius:10px;object-fit:cover;filter:drop-shadow(0 0 9px rgba(255,190,30,.25))}
+.actions .btn{white-space:nowrap}
+.yt-special-cover{position:relative;min-height:clamp(330px,48vw,640px);background:radial-gradient(circle at 78% 28%,#3a2500 0,#120e05 25%,#050505 62%),linear-gradient(135deg,#0b0b0b,#171717);overflow:hidden;padding:clamp(24px,5vw,65px);display:flex;flex-direction:column;justify-content:center;cursor:pointer;color:#fff}
+.yt-special-cover:before{content:"";position:absolute;inset:18px;border:1px solid #ffbd16aa;border-radius:16px;box-shadow:inset 0 0 45px #ffbd1612,0 0 35px #ffbd1614}
+.yt-cover-glow{position:absolute;width:420px;height:420px;border-radius:50%;right:-100px;top:-130px;background:#ffbd1615;filter:blur(20px)}
+.yt-logo-badge{position:absolute;top:clamp(25px,4vw,50px);right:clamp(25px,4vw,50px);width:62px;height:44px;border-radius:13px;background:#ff1d1d;color:#fff;display:grid;place-items:center;font-size:24px;font-weight:900;box-shadow:0 0 25px #ff1d1d44;z-index:2}
+.yt-cover-small,.cover-kicker{font-size:clamp(9px,1.3vw,13px);letter-spacing:.28em;color:#ffbd16;font-weight:900;position:relative;z-index:2}
+.yt-cover-title{font-size:clamp(48px,10vw,128px);font-weight:950;line-height:.78;letter-spacing:-.07em;margin:20px 0;position:relative;z-index:2;text-shadow:0 10px 40px #000}.yt-cover-title span{color:transparent;-webkit-text-stroke:1px #fff}
+.yt-cover-copy{font-size:clamp(14px,2vw,24px);letter-spacing:.2em;font-weight:800;position:relative;z-index:2}.yt-cover-bottom{position:absolute;left:clamp(25px,4vw,55px);right:clamp(25px,4vw,55px);bottom:clamp(25px,4vw,50px);display:flex;justify-content:space-between;gap:15px;z-index:2;font-size:12px;letter-spacing:.16em;color:#bbb}.yt-cover-bottom b{color:#ffbd16}
+.social-grid-three{grid-template-columns:repeat(3,1fr)!important}.creative-social{min-height:300px;text-decoration:none}.social-cover{min-height:300px;height:300px;padding:28px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}.yt-cover-mini{background:radial-gradient(circle at 70% 25%,#3a2500,#0a0a0a 62%)}.insta-cover{background:radial-gradient(circle at 80% 15%,#7225a7,#231027 40%,#070707 80%)}.gmail-cover{background:radial-gradient(circle at 80% 20%,#193c67,#08111d 55%,#050505)}.cover-main{font-size:clamp(28px,4vw,52px);font-weight:950;line-height:.85;letter-spacing:-.06em;margin:16px 0;position:relative;z-index:2}.cover-main span{color:#ffbd16}.insta-cover .cover-main span{color:#ff7b32}.gmail-cover .cover-main span{color:#9cc8ff;font-size:.65em}.cover-bottom{font-size:11px;color:#bbb;letter-spacing:.08em;position:relative;z-index:2}.insta-mark,.mail-mark{position:absolute;right:24px;top:22px;font-size:55px;font-weight:900;color:#fff8}.social-overlay b{color:#ffbd16;font-size:10px;letter-spacing:.12em}.creator-gallery{align-items:start}.creator-shot:nth-child(3){min-height:580px}.creator-shot:nth-child(3) img{object-position:center 28%;transform:scale(1.03)}.services-creative{grid-template-columns:repeat(3,1fr)}.service{position:relative;overflow:hidden;min-height:210px;display:flex;gap:18px;align-items:center;text-decoration:none}.service:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#ffbd1610,transparent 55%);pointer-events:none}.service-capcut{background:linear-gradient(135deg,#17122b,#080808)}.service-minecraft{background:linear-gradient(135deg,#132615,#080808)}.service-other{background:linear-gradient(135deg,#221a09,#080808)}.app-icon{width:72px;height:72px;border-radius:18px;display:grid;place-items:center;flex:none;font-size:34px;font-weight:900;color:#fff;border:1px solid #ffffff33;box-shadow:0 10px 30px #0008}.capcut-icon{background:linear-gradient(135deg,#101010,#8d67ff)}.minecraft-icon{background:linear-gradient(135deg,#4b8f38,#7b4f2c);font-size:40px}.other-icon{background:#111;border-color:#ffbd16;color:#ffbd16}.service-tag{font-size:9px;letter-spacing:.22em;color:#ffbd16;font-weight:900}.service h3{margin:5px 0 7px}.service p{margin:0}.service-arrow{position:absolute;right:18px;bottom:16px;color:#ffbd16}.ram-button{border:1px solid #ffbd16;border-radius:999px;background:linear-gradient(135deg,#ffbd16,#ff8f00);color:#090909;font-family:Georgia,serif;font-style:italic;font-size:clamp(32px,6vw,70px);font-weight:900;padding:16px 34px;cursor:pointer;box-shadow:0 0 45px #ffbd1628,0 14px 35px #0008;transition:.25s}.ram-button:hover{transform:translateY(-3px) scale(1.02)}
+.yt-final-card{display:flex;align-items:center;gap:20px;padding:22px;border:1px solid #4a3505;border-radius:22px;background:radial-gradient(circle at 15% 50%,#3b2500,#090909 60%);text-decoration:none;color:#fff;margin-bottom:18px;box-shadow:0 20px 60px #0008}.yt-final-logo{width:74px;height:52px;border-radius:15px;background:#ff1d1d;display:grid;place-items:center;font-size:28px;font-weight:900;flex:none}.yt-final-card strong{display:block;font-size:clamp(24px,4vw,44px);letter-spacing:-.04em;margin:4px 0}.yt-final-card span{display:block;color:#999;font-size:11px}
+.ram-pop{position:fixed;inset:0;z-index:2000;display:none;place-items:center;background:#000b;backdrop-filter:blur(9px)}.ram-pop.show{display:grid}.ram-pop-box{padding:35px 28px;border:1px solid #ffbd16;border-radius:26px;background:radial-gradient(circle,#2b1b00,#080808 68%);text-align:center;box-shadow:0 0 90px #ffbd1633}.ram-pop-box h3{font-family:Georgia,serif;font-style:italic;font-size:clamp(42px,8vw,85px);color:#ffbd16;margin:0 0 10px}.ram-pop-box p{color:#ddd;font-size:18px}
+@media(max-width:900px){.social-grid-three,.services-creative{grid-template-columns:1fr!important}.social-cover{height:260px;min-height:260px}.creator-shot:nth-child(3){min-height:430px}.yt-final-card{align-items:flex-start}.yt-final-logo{width:62px;height:44px}}
+@media(max-width:520px){.yt-special-cover{min-height:300px}.yt-cover-title{font-size:52px}.yt-cover-bottom{flex-direction:column;gap:6px}.ram-button{font-size:38px;padding:14px 22px}.app-icon{width:58px;height:58px}}
+</style>
+<style>@keyframes floatUp{from{transform:translateY(0) scale(.8);opacity:1}to{transform:translateY(-90px) scale(1.2);opacity:0}}</style><style>
+/* FINAL BKR polish */
+.social-showcase .social-grid{grid-template-columns:repeat(3,1fr)}
+.social-cover{height:100%;min-height:300px;position:relative;overflow:hidden;padding:28px;display:flex;flex-direction:column;justify-content:center;border-radius:20px;background:#080808}
+.social-cover:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#ffbd1620,transparent 48%,#000 100%);pointer-events:none}
+.yt-cover-social{background:radial-gradient(circle at 75% 20%,#5b1900,#0a0a0a 58%,#000)}
+.insta-cover-social{background:radial-gradient(circle at 78% 18%,#8d2f72,#24102d 38%,#050505 78%)}
+.gmail-cover-social{background:radial-gradient(circle at 78% 18%,#174b7d,#0a1520 42%,#050505 80%)}
+.social-logo{position:absolute;right:25px;top:23px;z-index:2;display:grid;place-items:center;font-weight:950;box-shadow:0 12px 35px #0009}
+.youtube-logo{width:78px;height:52px;border-radius:16px;background:#ff1d25;color:#fff;font-size:27px}.youtube-logo span{transform:translateX(2px)}
+.instagram-logo{width:65px;height:65px;border-radius:20px;border:3px solid #fff;color:#fff;font-size:45px;background:linear-gradient(135deg,#ffb13b,#e1306c,#833ab4)}
+.gmail-logo{width:68px;height:52px;border-radius:13px;background:#fff;color:#d93025;font-size:31px}
+.social-eyebrow{position:relative;z-index:2;color:#ffbd16;font-size:10px;letter-spacing:.2em;font-weight:900;margin-bottom:13px}
+.social-big{position:relative;z-index:2;font-size:clamp(38px,5vw,68px);font-weight:950;line-height:.82;letter-spacing:-.065em;text-shadow:0 10px 35px #000}.social-big span{color:#ffbd16}
+.insta-cover-social .social-big span{color:#ff7bca}.gmail-cover-social .social-big span{color:#8ecbff}
+.social-small{position:relative;z-index:2;color:#ddd;font-size:11px;margin-top:18px;max-width:90%;word-break:break-word}.social-open{position:relative;z-index:2;color:#fff;margin-top:18px;font-size:10px;letter-spacing:.14em;font-weight:900}
+.social-content-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin:55px 0 16px}.social-content-head h3{margin:4px 0 0;font-size:clamp(25px,4vw,42px);letter-spacing:-.04em}.social-content-head h3 span{color:#777;font-size:.38em;letter-spacing:.08em}.posts-head{margin-top:60px}
+.reel-card,.post-card{position:relative}
+.reel-card img,.post-card img{filter:saturate(1.12) contrast(1.04);transition:transform .45s ease,filter .45s ease}.reel-card:hover img,.post-card:hover img{transform:scale(1.035);filter:saturate(1.28) contrast(1.08) brightness(1.05)}
+.reel-card:after,.post-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,#000b 100%);pointer-events:none}
+/* Keep each edit at its source ratio; EDIT 01 is vertical 1080×1920 (9:16). */
+.edit-card:first-child .edit-video{aspect-ratio:9/16;height:auto;object-fit:contain;background:#000}
+.edit-card:nth-child(2) .edit-video,.edit-card:nth-child(3) .edit-video{height:auto;object-fit:contain}
+@media(max-width:800px){.social-showcase .social-grid{grid-template-columns:1fr}.social-content-head{align-items:flex-start;flex-direction:column}.social-cover{min-height:270px}}
+</style>
+<style>
+.edit-card{overflow:hidden;}
+.edit-video{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#000;}
+</style>
+</head>
+<body>
+<!-- LOADING -->
+<div class="loader" id="loader">
+<div class="loader-inner">
+<video autoplay="" class="loader-video" id="loaderVideo" loop="" muted="" playsinline="" preload="auto"><source src="assets/videos/asset-01.mp4" type="video/mp4"/></video>
+<div class="loader-name">BHAVESH RATHOD</div>
+<div class="loader-sub">BKR CREATIVE STUDIO</div>
+<div class="loader-track"><div class="loader-bar" id="loaderBar"></div></div>
+<div class="loader-percent" id="loaderPercent">0%</div>
+<div class="loader-fallback">Preparing the experience...</div>
+</div>
+</div>
+<!-- WELCOME -->
+<div class="welcome" id="welcome">
+<div class="welcome-box" id="welcomeBox">
+<button class="welcome-close" id="welcomeClose">×</button>
+<div class="kicker">WELCOME TO BKR</div>
+<h2>Welcome.</h2>
+<p>Support the work — subscribe on YouTube, follow Instagram, leave a genuine review, or continue to the website.</p>
+<div class="modal-actions">
+<a class="btn primary welcome-action" data-action="youtube" href="https://www.youtube.com/@Special_Attention" rel="noopener" target="_blank">▶ SUBSCRIBE ON YOUTUBE</a>
+<a class="btn welcome-action" data-action="instagram" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank">📸 FOLLOW ON INSTAGRAM</a>
+<a class="btn welcome-action" data-action="review" href="https://g.page/r/CTZk7FRu-1hkEBM/review" rel="noopener" target="_blank">⭐ GENUINE RATING / REVIEW</a>
+<button class="btn primary welcome-action" data-action="continue" id="continueBtn">CONTINUE TO WEBSITE</button>
+</div>
+<div class="note">Your genuine support means a lot.</div>
+</div>
+</div>
+<div class="celebrate" id="celebrate"></div>
+<header class="topbar">
+<a aria-label="BKR Creative" class="brand" href="#top"><video autoplay="" class="mini bkr-mini-video" loop="" muted="" playsinline="" preload="auto"><source src="assets/videos/asset-02.mp4"/></video><span>BKR</span></a>
+<nav class="nav"><a href="#edits">WORK</a><a href="#instagram">INSTAGRAM</a><a href="#youtube">YOUTUBE</a><a href="#contact">CONTACT</a></nav>
+<button class="sound" id="soundBtn">🔇 MUSIC OFF</button>
+</header>
+<button class="music" id="musicBtn">♪ MUSIC OFF</button>
+<audio id="bgAudio" loop="" preload="auto"><source src="assets/audio/asset-01.mp3" type="audio/mpeg"/></audio>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><div class="kicker">BKR / CREATIVE STUDIO</div><h1><span>MAKE</span><span>THEM</span><span class="outline">LOOK.</span></h1><p>A premium cinematic digital space for Bhavesh Kanhaiyalal Rathod.</p><div class="actions"><a class="btn primary" href="#edits">VIEW MY WORK ↓</a><a class="btn" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank">INSTAGRAM ↗</a><a class="btn" href="https://www.youtube.com/@Special_Attention" rel="noopener" target="_blank">YOUTUBE ↗</a><a class="btn" href="https://g.page/r/CTZk7FRu-1hkEBM/review" rel="noopener" target="_blank">⭐ RATE / REVIEW ↗</a><a class="btn" href="mailto:bhaveshrathod26102009@gmail.com">✉ GMAIL ↗</a></div></div><div class="hero-art"><div class="frame"><img alt="Bhavesh Rathod" src="assets/images/asset-02.jpg"/><span></span></div><div class="stripe"></div></div></div></section><section id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">01 / THE CREATOR</div><h2>THE CREATOR.</h2></div></div><div class="creator"><div class="creator-gallery"><div class="creator-shot"><img alt="Bhavesh Rathod black and white portrait 1" src="assets/images/asset-03.jpg"/></div><div class="creator-shot"><img alt="Bhavesh Rathod black and white portrait 2" src="assets/images/asset-04.jpg"/></div><div class="creator-shot"><img alt="Bhavesh Rathod black and white portrait 3" src="assets/images/asset-05.jpg"/></div></div><div class="creator-card"><div class="creator-label">THE CREATOR</div><div class="creator-name">Bhavesh<br/>Kanhaiyalal<br/>Rathod</div><div class="creator-location">Barwani, India</div><div class="creator-line"></div><div class="actions"><a class="btn primary" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank">FOLLOW ON INSTAGRAM ↗</a><a class="btn" href="https://www.youtube.com/@Special_Attention" rel="noopener" target="_blank">SUBSCRIBE ON YOUTUBE ↗</a></div><div class="creator-ram">जय श्री राम 🚩</div></div></div></div></section>
+<section aria-label="Featured YouTube video" class="yt-feature-wrap" id="yt-feature-work">
+<div class="yt-feature-head"><div><div class="kicker">03 / YOUTUBE</div><div class="yt-feature-title">SPECIAL ATTENTION.</div></div><a class="btn primary" href="https://youtube.com/shorts/rEa3IQ8S07I?si=aJyBaQWkktSy8M5D" rel="noopener" target="_blank">OPEN ON YOUTUBE ↗</a></div>
+<div class="yt-feature-card" id="ytFeatureCard">
+<div aria-label="Play Special Attention YouTube video" class="yt-feature-poster yt-special-cover" id="ytPoster" role="button" tabindex="0"><div class="yt-logo-badge">▶</div><div class="yt-cover-small">YOUTUBE SHORT • SPECIAL ATTENTION</div><div class="yt-cover-title">SPECIAL<br/><span>ATTENTION.</span></div><div class="yt-cover-copy">VIDEO DEKHO • SUPPORT KARO</div><div class="yt-cover-bottom"><span>@Special_Attention</span><b>▶ WATCH NOW</b></div><div class="yt-cover-glow"></div></div>
+<button aria-label="Play Special Attention YouTube video" class="yt-play" id="ytPlay" type="button">▶</button>
+<div class="yt-feature-bottom"><div><strong>EDIT 03 — SPECIAL ATTENTION</strong><br/><span>My YouTube Short • Tap play to watch</span></div><span>YOUTUBE / @Special_Attention</span></div>
+</div>
+</section>
+<section aria-label="Follow the work" class="social-showcase"><div class="wrap"><div class="kicker">FOLLOW THE WORK / TAP TO OPEN</div><div class="social-grid social-grid-three">
+<a aria-label="Open Special Attention on YouTube" class="social-card creative-social yt-work-card" data-yt-link="https://youtube.com/shorts/rEa3IQ8S07I?si=aJyBaQWkktSy8M5D" href="https://www.youtube.com/@Special_Attention" rel="noopener" role="link" tabindex="0" target="_blank"><div class="social-cover yt-cover-social"><div class="social-logo youtube-logo"><span>▶</span></div><div class="social-eyebrow">YOUTUBE / SPECIAL ATTENTION</div><div class="social-big">WATCH.<br/><span>SUPPORT.</span></div><div class="social-small">SPECIAL ATTENTION • @Special_Attention</div><div class="social-open">OPEN YOUTUBE ↗</div></div></a>
+<a aria-label="Open Instagram" class="social-card creative-social" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank"><div class="social-cover insta-cover-social"><div class="social-logo instagram-logo">◎</div><div class="social-eyebrow">INSTAGRAM / BHAVESH RATHOD 07</div><div class="social-big">FOLLOW<br/><span>THE VIBE.</span></div><div class="social-small">@_bhavesh_rathod_07_ • CREATIVE FEED</div><div class="social-open">OPEN INSTAGRAM ↗</div></div></a>
+<a aria-label="Email Bhavesh Rathod" class="social-card creative-social" href="mailto:bhaveshrathod26102009@gmail.com" rel="noopener" target="_self"><div class="social-cover gmail-cover-social"><div class="social-logo gmail-logo">✉</div><div class="social-eyebrow">GMAIL / BHAVESH RATHOD 26102009</div><div class="social-big">LET'S<br/><span>CREATE.</span></div><div class="social-small">bhaveshrathod26102009@gmail.com</div><div class="social-open">SEND EMAIL ↗</div></div></a>
+</div><div class="kicker" style="margin-top:40px">REELS</div><div class="kicker" style="margin-top:40px">POSTS</div></div></section>
+<section class="motion-showcase"><div class="wrap"><div class="section-head"><div><div class="kicker">MOTION SHOWCASE</div><h2>BIG SCREEN MOTION.</h2></div><div class="muted">Autoplay • Loop • Native ratio</div></div><div class="motion-grid">
+<article class="motion-card"><video autoplay="" class="motion-video" loop="" muted="" playsinline="" preload="auto"><source src="assets/videos/asset-03.mp4" type="video/mp4"/></video><div class="motion-info"><div><strong>BKR CREATIVE STUDIO</strong><br/><span>BKR logo animation • Loading + website branding</span></div><button class="motion-sound" type="button">🔇</button></div></article>
+<article class="motion-card"><a href="https://www.youtube.com/@Special_Attention" rel="noopener" target="_blank"><video autoplay="" class="motion-video" loop="" muted="" playsinline="" preload="auto"><source src="assets/videos/asset-04.mp4" type="video/mp4"/></video></a><div class="motion-info"><div><strong>SPECIAL ATTENTION — YOUTUBE</strong><br/><span>Tap the video to open YouTube</span></div><button class="motion-sound" type="button">🔇</button></div></article>
+<article class="motion-card"><a href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank"><video autoplay="" class="motion-video" loop="" muted="" playsinline="" preload="auto"><source src="assets/videos/asset-05.mp4" type="video/mp4"/></video></a><div class="motion-info"><div><strong>INSTAGRAM — @BHAVESH_RATHOD_07_</strong><br/><span>Tap the video to open Instagram</span></div><button class="motion-sound" type="button">🔇</button></div></article>
+</div></div></section>
+
+<section class="edits" id="edits"><div class="wrap"><div class="section-head"><div><div class="kicker">02 / THE EDITS</div><h2>THE EDITS.</h2></div><div class="muted">Individual large-screen videos • native ratio</div></div><div class="edit-grid" id="editGrid"></div></div></section>
+<section id="youtube"><div class="wrap"><div class="section-head"><div><div class="kicker">03 / YOUTUBE</div><h2>SPECIAL ATTENTION.</h2></div><a class="btn primary" href="https://www.youtube.com/@Special_Attention" rel="noopener" target="_blank">SUBSCRIBE ↗</a></div><div class="social-card" style="cursor:pointer"><a href="https://youtube.com/shorts/rEa3IQ8S07I?si=-Y60FFb6P61KP4i7" rel="noopener" target="_blank"><img alt="YouTube featured visual" src="assets/images/asset-06.jpg"/><div class="social-overlay"><div><span>FEATURED SHORT</span><strong>Tap to watch on YouTube</strong></div><b>↗</b></div></a></div></div></section>
+<section id="instagram"><div class="wrap"><div class="section-head"><div><div class="kicker">04 / INSTAGRAM</div><h2>@_BHAVESH_RATHOD_07_</h2></div><a class="btn primary" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank">OPEN INSTAGRAM ↗</a></div><div class="kicker">HIGHLIGHTS</div><div class="highlights"><a class="highlight" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank"><div class="ring"><img alt="BKR" src="assets/images/asset-07.jpg"/></div><span>BKR</span></a><a class="highlight" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank"><div class="ring"><img alt="Special Attention" src="assets/images/asset-08.jpg"/></div><span>Special Attention</span></a><a class="highlight" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank"><div class="ring"><img alt="Bhavesh" src="assets/images/asset-09.jpg"/></div><span>Bhavesh</span></a></div><div class="social-content-head"><div><div class="kicker">REELS</div><h3>INSTAGRAM REELS <span>— FUN • VIBES • MEMORIES</span></h3></div><a class="btn" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank">VIEW ALL ↗</a></div><div class="reel-grid" id="reels"></div><div class="social-content-head posts-head"><div><div class="kicker">POSTS</div><h3>INSTAGRAM POSTS <span>— CLICK • LIKE • SUPPORT</span></h3></div><a class="btn" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank">VIEW ALL ↗</a></div><div class="posts-grid" id="posts"></div></div></section>
+<section><div class="wrap"><div class="section-head"><div><div class="kicker">05 / REQUEST</div><h2>DM ME.</h2></div><div class="muted">Tap a card to open Instagram DM</div></div><div class="services services-creative">
+<a class="service service-capcut" data-dm="Hello Bhavesh Rathod ji, mujhe CapCut for Android ke liye madad chahiye." href="https://ig.me/m/_bhavesh_rathod_07_" rel="noopener" target="_blank"><div class="app-logo-wrap"><svg aria-hidden="true" viewbox="0 0 64 64"><rect fill="#111" height="58" rx="14" width="58" x="3" y="3"></rect><path d="M16 39c10 2 18-3 28-15l4 4c-10 15-19 22-32 18z" fill="#fff"></path><path d="M18 25c10 7 18 7 29-3l3 5c-12 12-23 13-34 5z" fill="#b79cff"></path></svg></div><div><div class="service-tag">ANDROID APP</div><h3>CAPCUT</h3><p>Editing app chahiye? DM kare</p></div><span class="service-arrow">↗</span></a>
+<a class="service service-minecraft" data-dm="Hello Bhavesh Rathod ji, mujhe Minecraft ke liye madad chahiye." href="https://ig.me/m/_bhavesh_rathod_07_" rel="noopener" target="_blank"><div class="app-logo-wrap"><svg aria-hidden="true" viewbox="0 0 64 64"><path d="M8 19 32 7l24 12-24 12z" fill="#79c65b"></path><path d="M8 19v27l24 12V31z" fill="#5a9f43"></path><path d="M56 19v27L32 58V31z" fill="#8a5b36"></path><path d="M21 24h8v9h-8zM35 17h9v10h-9zM41 34h9v10h-9z" fill="#2f5f2b"></path><path d="M13 29h8v8h-8z" fill="#3d742f"></path></svg></div><div><div class="service-tag">GAME</div><h3>MINECRAFT</h3><p>Minecraft chahiye? DM kare</p></div><span class="service-arrow">↗</span></a>
+<a class="service service-other" data-dm="Hello Bhavesh Rathod ji, mujhe apki madad chahiye." href="https://ig.me/m/_bhavesh_rathod_07_" rel="noopener" target="_blank"><div class="app-icon other-icon">•••</div><div><div class="service-tag">ANYTHING ELSE</div><h3>OTHER / BOHOT KUCHH</h3><p>Kisi bhi help ya requirement ke liye DM kare</p></div><span class="service-arrow">↗</span></a>
+</div></div></section>
+<section><div class="wrap"><div class="review"><div class="kicker">06 / JAY SHREE RAM 🚩</div><h2>ENJOY THE WORK.</h2><button class="ram-button" id="ramButton" type="button">जय श्री राम 🚩</button><p class="muted">Tap the button for a little BKR celebration.</p><a class="btn primary" href="https://g.page/r/CTZk7FRu-1hkEBM/review" rel="noopener" target="_blank">⭐ LEAVE A GENUINE REVIEW</a></div></div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><div><div class="kicker">07 / CONTACT</div><h2>LET'S CREATE.</h2></div></div><a class="yt-final-card" href="https://www.youtube.com/@Special_Attention" rel="noopener" style="background-image:linear-gradient(90deg,#050505eF,#050505B8),url('assets/images/asset-10.jpg');background-size:cover;background-position:center" target="_blank"><div class="yt-final-logo">▶</div><div><div class="kicker">SPECIAL ATTENTION / YOUTUBE</div><strong>SUBSCRIBE KAR LO YARR ❤️</strong><span>@Special_Attention · Open YouTube ↗</span></div></a><div class="actions"><a class="btn primary" href="https://www.instagram.com/_bhavesh_rathod_07_" rel="noopener" target="_blank">INSTAGRAM ↗</a><a class="btn" href="https://www.youtube.com/@Special_Attention" rel="noopener" target="_blank">YOUTUBE ↗</a><a class="btn" href="https://g.page/r/CTZk7FRu-1hkEBM/review" rel="noopener" target="_blank">⭐ RATE / REVIEW ↗</a></div><div class="gmail-last"><strong>Gmail</strong><br/><span><a href="mailto:bhaveshrathod26102009@gmail.com">bhaveshrathod26102009@gmail.com</a></span></div></div></section>
+</main>
+<footer class="footer"><div class="wrap foot"><div><strong>BKR Creative</strong><br/><small>Bhavesh Kanhaiyalal Rathod · Barwani, India</small></div><div class="gold">🚩 जय श्री राम</div></div></footer>
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const reels=[
+ 'https://www.instagram.com/reel/DdL8wmyOzf8/?stkn=ZWprY3JobDYzM2lz',
+ 'https://www.instagram.com/reel/DdyObgpSDtQ/?stkn=MTQ1MGFvbmZvMHp0Mw==',
+ 'https://www.instagram.com/reel/DWVy-gWPhfz/?stkn=NHhnZnJ0Y2twNmZn',
+ 'https://www.instagram.com/reel/DbsjJ1SMo8D/?stkn=MTh3cHFtdzliYjY1cg=='
+];
+const reelImgs=['assets/images/asset-11.jpg', 'assets/images/asset-12.jpg', 'assets/images/asset-13.jpg', 'assets/images/asset-14.jpg'];
+const postImgs=['assets/images/asset-15.jpg', 'assets/images/asset-16.jpg', 'assets/images/asset-17.jpg', 'assets/images/asset-18.jpg'];
+const videos=['assets/videos/asset-06.mp4','assets/videos/asset-07.mp4','assets/videos/asset-08.mp4'];
+const editNames=['EDIT 01 — SPECIAL ATTENTION','EDIT 02 — CINEMATIC','EDIT 03 — CREATIVE'];
+const editGrid=$('#editGrid'),reelGrid=$('#reels'),postGrid=$('#posts');
+function renderContent(){
+ editGrid.innerHTML=videos.map((src,i)=>`<article class="edit-card"><video class="edit-video" autoplay muted loop playsinline preload="auto" poster="${i===2 ? 'assets/images/asset-19.jpg' : reelImgs[i]}"><source src="${src}" type="video/mp4"></video><div class="edit-info"><div><div class="edit-title">${editNames[i]}</div><span class="edit-sub">Autoplay • Loop • Native source ratio</span>${i===2?'<a class="btn primary" style="margin-top:10px" target="_blank" rel="noopener" href="https://www.youtube.com/@Special_Attention">SUBSCRIBE ON YOUTUBE ↗</a>':''}</div><button class="video-sound" type="button" data-video="${i}">🔇</button></div></article>`).join('');
+ const reelTitles=['PEAK VIBES ONLY 🏔️','BROTHERHOOD • NO FILTER 🔥','FRAME IT. FEEL IT. 🎬','MORE THAN JUST FRIENDS ❤️']; const reelSub=['MOUNTAIN MOOD • BKR EDITION','BROTHERS • MEMORIES • MADNESS','ONE FRAME • ONE STORY','REAL BONDS • REAL MOMENTS']; reelGrid.innerHTML=reels.map((u,i)=>`<a class="reel-card" target="_blank" rel="noopener" href="${u}"><img src="${reelImgs[i]}" alt="Instagram Reel ${i+1}"><span class="reel-play">▶</span><span class="fun-cover-copy"><b> BKR • INSTAGRAM REEL 0${i+1}</b><strong>${reelTitles[i]}</strong><span>${reelSub[i]}</span></span><span class="reel-meta"><small>REEL 0${i+1}</small><strong>BKR CREATIVE</strong><em>Tap to watch ↗</em></span></a>`).join('');
+ const postTitles=['WAGONR • STREET MODE 🚗','MOUNTAIN THERAPY • ON 🏔️','DARK COMEBACK • LOADED 🖤','DESH FIRST • ALWAYS 🇮🇳']; postGrid.innerHTML=postImgs.map((img,i)=>`<a class="post-card" target="_blank" rel="noopener" href="https://www.instagram.com/_bhavesh_rathod_07_/"><img src="${img}" alt="Instagram Post ${i+1}"><span class="fun-cover-copy"><b>BKR • INSTAGRAM POST 0${i+1}</b><strong>${postTitles[i]}</strong><span>LOOK • LIKE • SUPPORT ↗</span></span><div class="post-info"><small>POST 0${i+1}</small><strong>BKR CREATIVE</strong><span>Open Instagram ↗</span></div></a>`).join('');
+}
+function playAll(){ $$('video').forEach(v=>{v.muted=true;v.autoplay=true;v.loop=true;v.playsInline=true;const p=v.play();if(p&&p.catch)p.catch(()=>{});}); }
+renderContent();playAll();
+
+const audio=$('#bgAudio'),musicBtn=$('#musicBtn'),soundBtn=$('#soundBtn');let musicWanted=false,musicOn=false;
+function updateMusic(){musicBtn.textContent=musicOn?'♪ MUSIC ON':'♪ MUSIC OFF';musicBtn.classList.toggle('on',musicOn);soundBtn.textContent=musicOn?'🔊 MUSIC ON':'🔇 MUSIC OFF';}
+async function startMusic(){musicWanted=true;try{audio.currentTime=audio.currentTime||0;await audio.play();musicOn=true;}catch(e){musicOn=false;}updateMusic();}
+function stopMusic(clear=true){audio.pause();musicOn=false;if(clear)musicWanted=false;updateMusic();}
+function resumeMusic(){if(musicWanted)startMusic();}
+musicBtn.addEventListener('click',()=>musicOn?stopMusic(true):startMusic());soundBtn.addEventListener('click',()=>musicOn?stopMusic(true):startMusic());
+$$('.video-sound').forEach(btn=>btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();const v=this.closest('.edit-card').querySelector('video');v.muted=!v.muted;this.textContent=v.muted?'🔇':'🔊';if(!v.muted){stopMusic(false);$$('.edit-video').forEach(x=>{if(x!==v)x.muted=true;});}else resumeMusic();}));
+$$('.motion-sound').forEach(btn=>btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();const v=this.closest('.motion-card').querySelector('video');v.muted=!v.muted;this.textContent=v.muted?'🔇':'🔊';if(!v.muted){stopMusic(false);$$('.motion-video').forEach(x=>{if(x!==v)x.muted=true;});}else resumeMusic();}));
+
+function celebrate(){const c=$('#celebrate');c.innerHTML='';c.classList.add('show');for(let i=0;i<48;i++){const x=document.createElement('span');x.className='conf';x.textContent=Math.random()>.5?'🎉':'🎊';x.style.left=Math.random()*100+'%';x.style.top='5%';x.style.setProperty('--x',(Math.random()*220-110)+'px');x.style.animationDelay=Math.random()*.25+'s';x.style.fontSize=(12+Math.random()*13)+'px';c.appendChild(x);}setTimeout(()=>{c.classList.remove('show');c.innerHTML='';},2100);}
+function showGanesh(){const box=$('#welcomeBox');box.innerHTML='<button class="welcome-close" id="welcomeClose2">×</button><div class="kicker">🎊 THANK YOU</div><h2>जय श्री गणेश</h2><div class="ganesh-final">Jai Shree Ganesh</div><p>Thank you for supporting BKR Creative Studio. Ab website enjoy kijiye.</p><button class="btn primary" id="enterWebsite">ENTER WEBSITE ↓</button>';celebrate();$('#enterWebsite').addEventListener('click',()=>$('#welcome').classList.remove('show'));$('#welcomeClose2').addEventListener('click',()=>$('#welcome').classList.remove('show'));}
+function showWelcome(){ $('#welcome').classList.add('show'); }
+$$('.welcome-action').forEach(a=>a.addEventListener('click',function(e){startMusic();if(this.dataset.action==='continue'){e.preventDefault();showGanesh();return;}setTimeout(showGanesh,450);}));
+$('#welcomeClose').addEventListener('click',()=>$('#welcome').classList.remove('show'));
+
+// Always show welcome on a fresh open. This avoids old localStorage blocking the popup during offline testing.
+let progress=0;const bar=$('#loaderBar'),pct=$('#loaderPercent');const tick=setInterval(()=>{progress=Math.min(96,progress+Math.random()*11);bar.style.width=progress+'%';pct.textContent=Math.round(progress)+'%';},180);
+function finishLoader(){if(finishLoader.done)return;finishLoader.done=true;clearInterval(tick);bar.style.width='100%';pct.textContent='100%';setTimeout(()=>{$('#loader').classList.add('hide');setTimeout(showWelcome,550);},350);}
+setTimeout(finishLoader,2200);window.addEventListener('load',()=>setTimeout(finishLoader,350));document.addEventListener('DOMContentLoaded',()=>setTimeout(finishLoader,1800));
+
+// DM clipboard helper
+$$('[data-dm]').forEach(a=>a.addEventListener('click',()=>{const t=a.getAttribute('data-dm');if(navigator.clipboard)navigator.clipboard.writeText(t).catch(()=>{});}));
+// retry video autoplay after any first interaction
+['touchstart','click','scroll'].forEach(ev=>window.addEventListener(ev,playAll,{once:true,passive:true}));
+})();
+</script>
+<script id="yt-work-update-js">
+(function(){
+  const card=document.getElementById('ytFeatureCard');
+  const play=document.getElementById('ytPlay');
+  const poster=document.getElementById('ytPoster');
+  const ytUrl='https://www.youtube.com/embed/rEa3IQ8S07I?rel=0&modestbranding=1&playsinline=1';
+  function startYT(){
+    if(!card || card.dataset.playing) return;
+    card.dataset.playing='1';
+    if(poster) poster.remove();
+    if(play) play.remove();
+    const iframe=document.createElement('iframe');
+    iframe.className='yt-feature-frame';
+    iframe.src=ytUrl; iframe.title='Special Attention — Bhavesh Rathod';
+    iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen=true;
+    const bottom=card.querySelector('.yt-feature-bottom');
+    card.insertBefore(iframe,bottom);
+  }
+  if(play) play.addEventListener('click',startYT);
+  if(poster) poster.addEventListener('click',startYT);
+  document.querySelectorAll('.yt-work-card').forEach(el=>{
+    const go=()=>window.open(el.getAttribute('data-yt-link'),'_blank','noopener');
+    el.addEventListener('click',go); el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
+  });
+})();
+</script>
+<div class="ram-pop" id="ramPop"><div class="ram-pop-box"><h3>जय श्री राम 🚩</h3><p>🎉 🎊 🔥 ❤️ 🚩🚩</p><button class="btn primary" id="ramClose">CONTINUE</button></div></div><script id="final-requested-update-js">(function(){const rb=document.getElementById('ramButton'),rp=document.getElementById('ramPop'),rc=document.getElementById('ramClose');if(rb&&rp){rb.addEventListener('click',()=>{rp.classList.add('show');for(let i=0;i<18;i++){const e=document.createElement('span');e.textContent=['🎉','🎊','🔥','❤️','🚩'][i%5];e.style.position='fixed';e.style.left=(10+Math.random()*80)+'%';e.style.top=(20+Math.random()*60)+'%';e.style.fontSize=(18+Math.random()*20)+'px';e.style.animation='floatUp 1.8s ease forwards';e.style.zIndex='2001';rp.appendChild(e);setTimeout(()=>e.remove(),1900)}});rc&&rc.addEventListener('click',()=>rp.classList.remove('show'));rp.addEventListener('click',e=>{if(e.target===rp)rp.classList.remove('show')});}const yp=document.getElementById('ytPoster');if(yp){yp.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();yp.click()}})}})();</script></body></html>
